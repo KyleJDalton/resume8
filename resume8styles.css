@@ -1,11 +1,13 @@
 body{
     margin:0;
     text-align:center;
-    display: flex;
-    flex-direction:column;
+    /* display: inline-block; */
+    /* flex-direction:column; */
     font-family: "merriweather", arial, helvetica, sans-serif;
     background-color:#EEEEEE;
+    width:100%;
 }
+
 
 
 header{
@@ -39,10 +41,11 @@ hr{
 }
 
 main{
-    display: flex;
-    flex-direction: row;
-    overflow: unset;
-    background-image: url(./Images/geometry-wallpaper.jpg);
+     display: flex; 
+     flex-direction: row; 
+     overflow: unset; 
+     background-image: url(./Images/geometry-wallpaper.jpg);
+    
 }
 
 
@@ -54,8 +57,27 @@ a:visited{
 }
 
 .content{
-    padding: 2rem;
+     padding: 2rem;
 }
+@media screen and (max-width: 768px){
+    main{
+        display: inline-block;
+        flex-direction: none;
+        overflow: unset;
+    }
+    #sidebar{
+        margin: 0;
+        width:100%;
+        height: fit-content;
+
+    }
+    #main-container{
+        width:100%;
+    }
+
+}
+
+
 .icon{
     width:4rem;
     margin: 2rem;
@@ -100,27 +122,29 @@ list-style-type: none;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    width: 200px
+    width: 30%;
     
 }
 
 #heading{
     background-image: url(./Images/geomety-wallpaper2.jpg);
-    
+    width: 100%;
 }
 
 
 #contact{
     color: #EEEEEE;
     background-image: url(./Images/geomety-wallpaper2.jpg);
-    
+    width: 100%;
 }
 #sidebar{
     background:#9D9D9D url(./Images/geomety-wallpaper2.jpg);
-    background: 3;
     padding:2rem;
-    width:6rem;
+    /* width:20%; */
     
+}
+#main-container{
+    width:100%;
 }
 
 #heading{
