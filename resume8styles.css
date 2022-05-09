@@ -1,8 +1,8 @@
 body{
     margin:0;
     text-align:center;
-    /* display: inline-block; */
-    /* flex-direction:column; */
+     display: inline-block; 
+     flex-direction:column; 
     font-family: "merriweather", arial, helvetica, sans-serif;
     background-color:#EEEEEE;
     width:100%;
@@ -55,26 +55,49 @@ a{
 a:visited{
     text-decoration: none;
 }
-
-.content{
-     padding: 2rem;
+.content-padding{
+    padding: 2rem;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
     main{
         display: inline-block;
         flex-direction: none;
-        overflow: unset;
+        
     }
     #sidebar{
         margin: 0;
-        width:100%;
         height: fit-content;
+        background-image: url(/Images/small-screen-backgroung.jpg);
 
     }
     #main-container{
         width:100%;
+        height:fit-content;
     }
 
+}
+@media screen and (max-width:800px){
+    main{
+        display: inline-block;
+        flex-direction: none;
+        
+    }
+    .paragraph-div{
+       
+    }
+    p{
+        padding: 2rem;
+    }
+    #sidebar{
+        margin: 0;
+        height: fit-content;
+        
+
+    }
+    #main-container{
+        width:100%;
+        height:fit-content;
+    }
 }
 
 
@@ -127,7 +150,7 @@ list-style-type: none;
 }
 
 #heading{
-    background-image: url(./Images/geomety-wallpaper2.jpg);
+     background-image: url(./Images/geomety-wallpaper2.jpg);
     width: 100%;
 }
 
@@ -138,9 +161,9 @@ list-style-type: none;
     width: 100%;
 }
 #sidebar{
-    background:#9D9D9D url(./Images/geomety-wallpaper2.jpg);
+     background:#9D9D9D url(./Images/geomety-wallpaper2.jpg);
     padding:2rem;
-    /* width:20%; */
+    
     
 }
 #main-container{
