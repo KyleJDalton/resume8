@@ -40,15 +40,6 @@ hr{
     
 }
 
-main{
-     display: flex; 
-     flex-direction: row; 
-     overflow: unset; 
-     background-image: url(./Images/geometry-wallpaper.jpg);
-    
-}
-
-
 a{
     text-decoration: none;
 }
@@ -62,13 +53,19 @@ a:visited{
     main{
         display: inline-block;
         flex-direction: none;
-        
+        background-image: url(./images/new-background-white.webp)
     }
     #sidebar{
         margin: 0;
         height: fit-content;
-        background-image: url(/Images/small-screen-backgroung.jpg);
+        background-image: url(./Images/new-backgroung-darksmall.webp);
 
+    }
+    #heading{
+        background-image: url(./Images/new-backgroung-darksmall.webp)
+    }
+    #Contact{
+        background-image: url(./Images/new-backgroung-darksmall.webp)
     }
     #main-container{
         width:100%;
@@ -80,10 +77,7 @@ a:visited{
     main{
         display: inline-block;
         flex-direction: none;
-        
-    }
-    .paragraph-div{
-       
+        background-image: url(../Images/new-background-white.webp);
     }
     p{
         padding: 2rem;
@@ -91,13 +85,42 @@ a:visited{
     #sidebar{
         margin: 0;
         height: fit-content;
-        
+        background-image: url(../Images/new-background-darkmed.png);
 
+    }
+    #heading{
+        background-image: url(../Images/new-background-darkmed.png);
+    }
+    #contact{
+        background-image: url(../Images/new-background-darkmed.png);
     }
     #main-container{
         width:100%;
         height:fit-content;
     }
+}
+@media screen and (min-width:800px){
+    #heading{
+        background-image: url(./Images/geomety-wallpaper2.jpg);
+       width: 100%;
+   }
+   #contact{
+    color: #EEEEEE;
+    background-image: url(./Images/geomety-wallpaper2.jpg);
+    width: 100%;
+}
+#sidebar{
+     background:#9D9D9D url(./Images/geomety-wallpaper2.jpg);
+    padding:2rem;
+}
+    main{
+        display: flex; 
+        flex-direction: row; 
+        overflow: unset; 
+        background-image: url(./Images/geometry-wallpaper.jpg);
+       
+   }
+
 }
 
 
@@ -149,23 +172,6 @@ list-style-type: none;
     
 }
 
-#heading{
-     background-image: url(./Images/geomety-wallpaper2.jpg);
-    width: 100%;
-}
-
-
-#contact{
-    color: #EEEEEE;
-    background-image: url(./Images/geomety-wallpaper2.jpg);
-    width: 100%;
-}
-#sidebar{
-     background:#9D9D9D url(./Images/geomety-wallpaper2.jpg);
-    padding:2rem;
-    
-    
-}
 #main-container{
     width:100%;
 }
